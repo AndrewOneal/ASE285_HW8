@@ -5,6 +5,7 @@ const {createHash} = require('crypto')
 
 function readFile(fileName) {
     if (!fs.existsSync(fileName)) {
+        console.log('Directory:' + __dirname);
         throw `${fileName} does not exist!`
     }
     try {

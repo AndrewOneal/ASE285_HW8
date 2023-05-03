@@ -1,5 +1,6 @@
 'use strict'
-const {readFile, writeFile, hash} = require('./utility')
+const {readFile, writeFile, hash} = require('./utility');
+const path = require('path');
 
 function makePassword(passwordFileName, passwordEncFileName) {
    const fileData = readFile(passwordFileName);
@@ -15,7 +16,9 @@ function makePassword(passwordFileName, passwordEncFileName) {
 }
 
 if (require.main === module) {
-    makePassword('./password.txt', './password.enc.txt')
+    //let unencrypted = path.join('.', 'password.txt');
+    //let encrypted = path.join('.', 'password.enc.txt');
+    makePassword('password.txt', 'password.enc.txt');
 }
 
 module.exports = {makePassword};
