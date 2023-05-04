@@ -26,14 +26,14 @@ describe("makepassword should create file", () => {
         const encFileName = './tests/passwordtest.enc.txt'
 
         // 1. Make sure password.enc.txt does not exist before running the function.
-        ???
+
         
         p.makepassword(fileName, encFileName)
 
         // 2. Make sure password.enc.txt does exist after running the function.
-        ???
+
 
         // 3. Make sure the contents of password.enc.txt has correct contents.
-        ???
+
     })
 })
