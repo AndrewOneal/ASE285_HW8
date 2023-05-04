@@ -5,9 +5,9 @@ function passwordjs() {
     if (process.argv.length != 5) return 'false';
 
     var encodedData = readFile(process.argv[2]);
-    var email = process.argv[3]
-    var password = process.argv[4]
-pup
+    var email = process.argv[3];
+    var password = process.argv[4];
+
     let match;
 
     encodedData.forEach((line, index) => {
